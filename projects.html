@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
 </head>
 <body>
     <header class='header'>
         <nav class='navbar'>
             <span class='headName'>
-                <h1 class='nameHeader'>Chris McArdle</h1>
+                <h1 class='nameHeader'><a href='index.html'>Chris McArdle</a></h1>
             </span>    
-            <span id='burger'>
-                
-            </span>
             <span>
-                <ul id='linkList'>
-                    <li class='navLinks'><a href=''>ABOUT ME</a></li>
-                    <li class='navLinks'><a href='projects.html'>PROJECTS</a></li>
-                    <li id='burger'><a href="#">&#9776;</a></li>
+                <ul id='linkList' class='linkList'>
+                    <li class='navLinks hidden'><a href='about.html'>ABOUT ME</a></li>
+                    <li class='navLinks hidden'><a href='projects.html'>PROJECTS</a></li>
                 </ul>
             </span> 
+            <span class='navMenu'>
+                <button class='burger'>&#9776;</button>
+            </span>
         </nav>
     </header>
     <main class='addPadding'>
@@ -31,19 +32,19 @@
             <img class='proj-screenshot'src="./images/bears-quiz.jpg" alt="screenshot of Bears Qui App">
         </div>
         <div class='proj-desc'>
-        <h4>Bears Quiz App</h4>
+        <h3>Bears Quiz App</h3>
         <div class='technology-icons'>
             <img class='techIcon' src="./images/html5.png" alt="HTML5 Logo">
             <img class='techIcon' src="./images/css3.png" alt="CSS3 Logo">
             <img class='techIcon' src="./images/javascript.png" alt="JavaScript Logo">
             <img class='techIcon' src="./images/jquery.png" alt="jQuery Logo">
         </div>
-        <p>Bear Quiz App is an an app in which users are asked a series of multiple choice questions about the history of the Chicago 
+        <p>Users are asked a series of multiple choice questions about the history of the Chicago 
             Bears. Users are given a final score once all questions are answered. 
         </p>
         <div class='proj-btns'>
-            <button>Repo</button>
-            <button>Live App</button>
+            <button class='button1'><a class='contactMe' href='https://github.com/ctmq75/bears-quiz'>Repo</a></button>
+            <button class='button1'><a class='contactMe'href='https://ctmq75.github.io/bears-quiz/'>Live App</a></button>
         </div>
         </div>
 
@@ -54,6 +55,6 @@
 
 
 </main>
-    
+<script src='portfolio.js'></script>    
 </body>
 </html>
