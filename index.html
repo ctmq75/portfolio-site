@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris McArdle</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class='header'>
     <nav class='navbar'>
-        <span id='headName'>
-            <h1>Chris McArdle</h1>
+        <span class='headName'>
+            <h1 class='nameHeader'>Chris McArdle</h1>
         </span>    
         <span id='burger'>
             
@@ -19,22 +20,28 @@
             <ul id='linkList'>
                 <li class='navLinks'><a href=''>ABOUT ME</a></li>
                 <li class='navLinks'><a href='projects.html'>PROJECTS</a></li>
-                <li id='burger'><a href="#">&#9776;</a></li>
             </ul>
+            <div id='burger' class='burger'><a href="#">&#9776;</a></div>
         </span> 
     </nav>
     </header>
     <main>
-    <section>
-        <p>Hey! I’m Chris, a Chicago-based Web Developer.</p>
-        <img src="./images/bitmoji.png" alt="chris mcardles bitmoji" style="width:25%;height:auto;"">
-        <p>When I am not busy creating pixel-perfect websites with HTML, CSS, JavsScript,and jQuery- I spend my time playing golf, 
-            reading up on the latest technology, partaking in <i>any</i> outdoor activity, or experimenting with different recipes in the 
+    <section class='addPadding'>
+        <div class='headlineAndPic'>
+            <p>Hey! I’m Chris, a Chicago-based Web Developer.</p>
+            <img src="./images/bitmoji.png" alt="chris mcardles bitmoji" style="width:25%;height:auto;">
+        </div>
+        <p class='bio'>When I am not busy creating pixel-perfect websites with HTML, CSS, JavsScript,and jQuery- I spend my time partaking in <i>any</i> outdoor activity, playing golf, 
+            reading up on the latest technology, or experimenting with different recipes in the 
             kitchen. I bring my passion for knowledge and creative problem-solving skills with me everywhere I go and strongly 
             believe I would be an outstanding addition to any team!</p>
-        <button>Contact Me!</button>
+        
     </section>
+    <div class='button'>
+        <button>Contact Me!</button>
+    </div>    
     </main>
-    
+<script src='portfolio.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 </body>
 </html>
