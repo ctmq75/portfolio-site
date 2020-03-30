@@ -16,6 +16,9 @@ li {
 .active{
     display: none;
 }
+.burger{
+    color: lightgrey;
+}
 
 .navbar {
     display: flex;
@@ -77,7 +80,7 @@ li {
 }
 
 .techIcon{
-    width: 5%;
+    width: 20%;
     height: auto;
 }
 
@@ -121,6 +124,8 @@ main{
     width: 8em;
     height: auto;
     overflow: hidden;
+    background-color: white;
+    border-radius: 25px;
 }
 .proj-btns{
     padding-bottom: 1em;
@@ -129,7 +134,7 @@ main{
     color: black;
 }
 .contactIcon{
-    width: 6%;
+    width: 25%;
     height: auto;
 }
 .bio{
@@ -153,12 +158,27 @@ main{
         display: none;
 
     }  
+    .contactIcon{
+        width: 15%;
+        height: auto;
+    }
+    .techIcon{
+        width: 15%;
+        height: auto;
+    }
     
-  };
+  }
 
 
 @media only screen and (min-width: 768px) {
-
+    .contactIcon{
+        width: 8%;
+        height: auto;
+    }
+    .techIcon{
+        width: 7%;
+        height: auto;
+    }
     
   }
 
