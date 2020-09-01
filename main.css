@@ -5,6 +5,11 @@
 li {
     margin-right: 1.5em;
 }
+
+body {
+    margin: 0;
+}
+
 .header {
     border-bottom: 1px solid grey;
     border-width: 90%;
@@ -130,7 +135,7 @@ main{
     height: auto;
     overflow: hidden;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 .proj-btns{
     padding-bottom: 1em;
