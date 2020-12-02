@@ -234,6 +234,9 @@ a {
         text-align: center;
         color: #eeeeee;
     }
+    .sidenav-pic2 p{
+        display: flex;
+    }
 
 #hs {
     border-radius: 50%;
