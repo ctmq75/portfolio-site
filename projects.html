@@ -1,138 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KN9KTQRZEB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KN9KTQRZEB");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body id="proj-body">
+    <header class="header">
+      <nav class="sidenav">
+        <div class="sidenav-pic">
+          <img id="hs" src="./images/headshot.png" alt="headshot" />
+        </div>
+        <div class="sidenav-pic2">
+          <span class="nameHeader"><a href="index.html">Chris McArdle</a></span>
+          <p>Full-Stack Software Engineer</p>
+        </div>
 
-</head>
-<body id='proj-body'>
-    <header class='header'>
-        <nav class="sidenav">
-            <div class='sidenav-pic'>
-                <img id='hs' src='./images/headshot.png' alt='headshot' />
-            </div>
-            <div class='sidenav-pic2'>
-                <span class="nameHeader"><a href="index.html">Chris McArdle</a></span>
-                <p>Full-Stack Software Engineer</p>
-            </div>
-           
-    
-            <div class="links">
-              <ul id="linkList" class="linkList">
-                <li class="navLinks hidden"><a href="about.html">About</a></li>
-                <li class="navLinks hidden">
-                  <a href="projects.html">Projects</a>
-                </li>
-                <li class="navLinks hidden">
-                  <a href="https://www.linkedin.com/in/chris-mcardle-6a613230/"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li class="navLinks hidden">
-                    <a href="https://github.com/ctmq75">GitHub</a>
-                </li>
-              </ul>
-            </div>
-            <span class="navMenu">
-              <button class="burger">&#9776;</button>
-            </span>
-          </nav>
+        <div class="links">
+          <ul id="linkList" class="linkList">
+            <li class="navLinks hidden"><a href="about.html">About</a></li>
+            <li class="navLinks hidden">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="navLinks hidden">
+              <a href="https://www.linkedin.com/in/chris-mcardle-6a613230/"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="navLinks hidden">
+              <a href="https://github.com/ctmq75">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <span class="navMenu">
+          <button class="burger">&#9776;</button>
+        </span>
+      </nav>
     </header>
-    <main class='addPadding'>
-    <h2 class='proj-title'>Projects</h2>
+    <main class="addPadding">
+      <h2 class="proj-title">Projects</h2>
 
-    <section class='proj-template'>
-        <div class='proj-img'>
-            <img class='proj-screenshot' src="./images/ironhorsess.jpeg" alt="screenshot of Archy App">
+      <section class="proj-template">
+        <div class="proj-img">
+          <img
+            class="proj-screenshot"
+            src="./images/ironhorsess.jpeg"
+            alt="screenshot of Archy App"
+          />
         </div>
-        <div class='proj-desc'>
-        <h3>Iron Horse Antiques</h3>
-        <div class='technology-icons'>
-            <img class='techIcon' src="./images/react.png" alt="React Logo">
-            <img class='techIcon' src="./images/js.png" alt="JavaScript Logo">
-            <img class='techIcon' src="./images/node.png" alt="Node Logo">
-            <img class='techIcon' src="./images/express.png" alt="express Logo">
-            <img class='techIcon' src="./images/pg.jpg" alt="PostgreSQL Logo">
+        <div class="proj-desc">
+          <h3>Iron Horse Antiques</h3>
+          <div class="technology-icons">
+            <img class="techIcon" src="./images/react.png" alt="React Logo" />
+            <img class="techIcon" src="./images/js.png" alt="JavaScript Logo" />
+            <img class="techIcon" src="./images/node.png" alt="Node Logo" />
+            <img
+              class="techIcon"
+              src="./images/express.png"
+              alt="express Logo"
+            />
+            <img class="techIcon" src="./images/pg.jpg" alt="PostgreSQL Logo" />
+          </div>
+          <h5>What it is:</h5>
+          <p>
+            This is a web application for my Aunt and Uncle's antique business.
+            Users can sign up for their mailing list, find information about the
+            business, see current items for sale, and check out the family's
+            partner businesses.
+          </p>
+          <h5>Why:</h5>
+          <p>
+            My Aunt and Uncle run an antique shop in Northern Illinois and the
+            website was comically outdated. I decided it needed a new look and
+            built them a better one!
+          </p>
 
-
+          <div class="proj-btns">
+            <button
+              onclick="window.open('https://github.com/ctmq75/iron-horse-client')"
+              class="button1 contactMe"
+            >
+              Repo
+            </button>
+            <button
+              onclick="window.open('https://iron-horse.vercel.app/')"
+              class="button1 contactMe"
+            >
+              Live App
+            </button>
+          </div>
         </div>
-        <h5>What it is:</h5>
-        <p>This is a web application for my Aunt and Uncle's antique business. Users can sign up for their mailing list, find information about the business, see current items for sale, and check out the family's partner businesses. 
-        </p>
-        <h5>Why:</h5>
-        <p>My Aunt and Uncle run an antique shop in Northern Illinois and the website was comically outdated. I decided it needed a new look and built them a better one!</p>
+      </section>
 
-        <div class='proj-btns'>
-            <button onclick="window.open('https://github.com/ctmq75/iron-horse-client')" class='button1 contactMe'>Repo</button>
-            <button onclick="window.open('https://iron-horse.vercel.app/')" class='button1 contactMe'>Live App</button>
+      <section class="proj-template">
+        <div class="proj-img">
+          <img
+            class="proj-screenshot"
+            src="./images/ss.jpeg"
+            alt="screenshot of Archy App"
+          />
         </div>
+        <div class="proj-desc">
+          <h3>Self-Guided Architectural Tour of Chicago</h3>
+          <div class="technology-icons">
+            <img class="techIcon" src="./images/react.png" alt="React Logo" />
+            <img class="techIcon" src="./images/js.png" alt="JavaScript Logo" />
+            <img class="techIcon" src="./images/node.png" alt="Node Logo" />
+            <img
+              class="techIcon"
+              src="./images/express.png"
+              alt="express Logo"
+            />
+            <img class="techIcon" src="./images/pg.jpg" alt="PostgreSQL Logo" />
+          </div>
+          <h5>What it is:</h5>
+          <p>
+            Users can choose notable Chicago architectural sites from a list to
+            add to their self-guided tour route. The Google Maps Directions
+            service will optimize all of the waypoints and return a map of the
+            shortest route between all sites.
+          </p>
+          <h5>Why:</h5>
+          <p>
+            Chicago has some of the most architecturally unique buildings in the
+            world, but it would be impossible to admire all the buildings in one
+            day. So I created this app allowing users to pick and choose which
+            architectural sites they wanted to see. This app creates an
+            optimized route to take you to your selected sites with the shortest
+            possible route.
+          </p>
+
+          <div class="proj-btns">
+            <button
+              onclick="window.open('https://github.com/ctmq75/archy-app')"
+              class="button1 contactMe"
+            >
+              Repo
+            </button>
+            <button
+              onclick="window.open('https://archy-app.vercel.app/')"
+              class="button1 contactMe"
+            >
+              Live App
+            </button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class='proj-template'>
-        <div class='proj-img'>
-            <img class='proj-screenshot' src="./images/ss.jpeg" alt="screenshot of Archy App">
+      <section class="proj-template">
+        <div class="proj-img">
+          <img
+            class="proj-screenshot"
+            src="./images/vaca.jpeg"
+            alt="screenshot of Vacation Affordibility Judge"
+          />
         </div>
-        <div class='proj-desc'>
-        <h3>Self-Guided Architectural Tour of Chicago</h3>
-        <div class='technology-icons'>
-            <img class='techIcon' src="./images/react.png" alt="React Logo">
-            <img class='techIcon' src="./images/js.png" alt="JavaScript Logo">
-            <img class='techIcon' src="./images/node.png" alt="Node Logo">
-            <img class='techIcon' src="./images/express.png" alt="express Logo">
-            <img class='techIcon' src="./images/pg.jpg" alt="PostgreSQL Logo">
-
-
+        <div class="proj-desc">
+          <h3>Vacation Affordability Judge</h3>
+          <div class="technology-icons">
+            <img class="techIcon" src="./images/html5.png" alt="HTML5 Logo" />
+            <img class="techIcon" src="./images/css.png" alt="CSS3 Logo" />
+            <img class="techIcon" src="./images/js.png" alt="JavaScript Logo" />
+            <img class="techIcon" src="./images/jquery.png" alt="jQuery Logo" />
+          </div>
+          <h5>What it is:</h5>
+          <p>
+            Vacation Affordability Judge allows users to search for their
+            prospective destination city, and receive an "Affordability Grade"
+            for that city.
+          </p>
+          <h5>Why:</h5>
+          <p>
+            I love vacations, but they can be pricey. I built this app to give
+            users a general idea of how expensive their prospective travel
+            destination can be.
+          </p>
+          <div class="proj-btns">
+            <button
+              onclick="window.open('https://github.com/ctmq75/Vacation-Affordibility-Judge')"
+              class="button1 contactMe"
+            >
+              Repo
+            </button>
+            <button
+              onclick="window.open('https://ctmq75.github.io/Vacation-Affordibility-Judge/')"
+              class="button1 contactMe"
+            >
+              Live App
+            </button>
+          </div>
         </div>
-        <h5>What it is:</h5>
-        <p>Users can choose notable Chicago architectural sites from a list to add to their self-guided tour route. The Google Maps Directions service will optimize all of the waypoints and return a map of the shortest route between all sites.
-        </p>
-        <h5>Why:</h5>
-        <p>Chicago has some of the most architecturally unique buildings in the world, but it would be impossible to admire all the buildings in one day. So I created this app allowing users to pick and choose which architectural sites they wanted to see. This app creates an optimized route to take you to your selected sites with the shortest possible route.</p>
-
-        <div class='proj-btns'>
-            <button onclick="window.open('https://github.com/ctmq75/archy-app')" class='button1 contactMe'>Repo</button>
-            <button onclick="window.open('https://archy-app.vercel.app/')" class='button1 contactMe'>Live App</button>
-        </div>
-        </div>
-    </section>
-
-
-
-    <section class='proj-template'>
-        <div class='proj-img'>
-            <img class='proj-screenshot' src="./images/vaca.jpeg" alt="screenshot of Vacation Affordibility Judge">
-        </div>
-        <div class='proj-desc'>
-        <h3>Vacation Affordability Judge</h3>
-        <div class='technology-icons'>
-            <img class='techIcon' src="./images/html5.png" alt="HTML5 Logo">
-            <img class='techIcon' src="./images/css.png" alt="CSS3 Logo">
-            <img class='techIcon' src="./images/js.png" alt="JavaScript Logo">
-            <img class='techIcon' src="./images/jquery.png" alt="jQuery Logo">
-        </div>
-        <h5>What it is:</h5>
-        <p>Vacation Affordability Judge allows users to search for their prospective destination city, and receive an "Affordability Grade" for that city.
-        </p>
-        <h5>Why:</h5>
-        <p>I love vacations, but they can be pricey. I built this app to give users a general idea of how expensive their prospective travel destination can be. </p>
-        <div class='proj-btns'>
-            <button onclick="window.open('https://github.com/ctmq75/Vacation-Affordibility-Judge')" class='button1 contactMe'>Repo</button>
-            <button onclick="window.open('https://ctmq75.github.io/Vacation-Affordibility-Judge/')" class='button1 contactMe'>Live App</button>
-        </div>
-        </div>
-    </section>
-
-
-
-
-</main>
-<script src='portfolio.js'></script>    
-</body>
+      </section>
+    </main>
+    <script src="portfolio.js"></script>
+  </body>
 </html>
-
