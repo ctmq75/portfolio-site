@@ -6,6 +6,7 @@
   border-radius: 50%;
   width: 25%;
   height: auto;
+  padding: .4em;
 }
 .sidenav-pic {
     margin-left: 3%;
@@ -130,7 +131,6 @@ body {
 }
 .proj-template {
   width: 100%;
-  border: 1px solid black;
   padding: 3%;
   margin: 0 auto 2em auto;
   background-color: #eeeeee;
@@ -192,7 +192,7 @@ a {
   color: lightgrey;
   margin-left: 0.2em;
   font-family: "Oswald", sans-serif;
-  display: inline;
+  
 }
 .headlineAndPic {
   text-align: left;
