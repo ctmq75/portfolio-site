@@ -121,7 +121,10 @@ body {
 }
 
 #proj-body {
-  background-color: darkslategrey;
+  background-image: url('./images/carmel.jpg');
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .proj-screenshot {
